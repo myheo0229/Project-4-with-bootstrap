@@ -15,12 +15,13 @@
         <link rel="stylesheet" href="./style.css" />
         <title>Project 4 with bootstrap</title>
     </head>
-    <body>
+    <body class="bg-light">
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg bg-light border small border-bottom">
+        <nav class="navbar navbar-expand-lg bg-light border-bottom small fixed-top">
             <div class="container">
+                <!-- navbar rand -->
                 <a class="navbar-brand" href="#">
-                    <img src="./img/logo-tuhoc-light.png" alt="Logo website Tuhoc.cc" width="30" height="24" />
+                    <img src="./img/logo-tuhoc-light.png" alt="logo tuhoc.cc" />
                 </a>
                 <button
                     class="navbar-toggler"
@@ -37,77 +38,133 @@
                     <!-- menu item -->
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" aria-current="page" href="#">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Courses</a>
+                            <a class="nav-link" aria-current="page" href="#">Course</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">FAQ</a>
+                            <a class="nav-link" aria-current="page" href="./faq.html">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
+                            <a class="nav-link" aria-current="page" href="#">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" aria-current="page" href="./contact.html">Contact</a>
                         </li>
                     </ul>
 
-                    <!-- btn -->
-                    <div class="mb-lg-0 mb-2">
+                    <!-- btn dùng thẻ a để đăng ký và đăng nhập -->
+                    <div class="me-1 mb-2 mb-lg-0 d-flex flex-column gap-1 flex-md-row">
                         <a
-                            href="#"
-                            class="btn btn-danger btn-sm d-inline-flex justify-content-center align-items-center me-1"
+                            href="#!"
+                            class="btn btn-danger btn-sm d-inline-flex justify-content-center align-items-center"
                         >
                             <svg
-                                class="me-1"
                                 xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 640 640"
                                 width="16px"
                                 height="16px"
+                                class="me-2"
+                                viewBox="0 0 640 512"
                             >
-                                <!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                                 <path
-                                    fill="rgb(255, 255, 255)"
-                                    d="M285.7 368C384.2 368 464 447.8 464 546.3C464 562.7 450.7 576 434.3 576L77.7 576C61.3 576 48 562.7 48 546.3C48 447.8 127.8 368 226.3 368L285.7 368zM528 144C541.3 144 552 154.7 552 168L552 216L600 216C613.3 216 624 226.7 624 240C624 253.3 613.3 264 600 264L552 264L552 312C552 325.3 541.3 336 528 336C514.7 336 504 325.3 504 312L504 264L456 264C442.7 264 432 253.3 432 240C432 226.7 442.7 216 456 216L504 216L504 168C504 154.7 514.7 144 528 144zM256 312C189.7 312 136 258.3 136 192C136 125.7 189.7 72 256 72C322.3 72 376 125.7 376 192C376 258.3 322.3 312 256 312z"
+                                    fill="#ffffff"
+                                    d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM504 312l0-64-64 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l64 0 0-64c0-13.3 10.7-24 24-24s24 10.7 24 24l0 64 64 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-64 0 0 64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"
                                 />
                             </svg>
                             Sign-up for free
                         </a>
+
                         <a
-                            href="#"
-                            class="btn btn-warning btn-sm d-inline-flex justify-content-center align-items-center me-1"
+                            href="#!"
+                            class="btn btn-warning btn-sm d-inline-flex justify-content-center align-items-center"
                         >
                             <svg
-                                class="me-1"
                                 xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 640 640"
                                 width="16px"
                                 height="16px"
+                                class="me-2"
+                                viewBox="0 0 512 512"
                             >
-                                <!--!Font Awesome Pro v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.-->
+                                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
                                 <path
-                                    fill="#000"
-                                    d="M416 160L480 160C497.7 160 512 174.3 512 192L512 448C512 465.7 497.7 480 480 480L416 480C398.3 480 384 494.3 384 512C384 529.7 398.3 544 416 544L480 544C533 544 576 501 576 448L576 192C576 139 533 96 480 96L416 96C398.3 96 384 110.3 384 128C384 145.7 398.3 160 416 160zM406.6 342.6C419.1 330.1 419.1 309.8 406.6 297.3L278.6 169.3C266.1 156.8 245.8 156.8 233.3 169.3C220.8 181.8 220.8 202.1 233.3 214.6L306.7 288L96 288C78.3 288 64 302.3 64 320C64 337.7 78.3 352 96 352L306.7 352L233.3 425.4C220.8 437.9 220.8 458.2 233.3 470.7C245.8 483.2 266.1 483.2 278.6 470.7L406.6 342.7z"
+                                    d="M352 96l64 0c17.7 0 32 14.3 32 32l0 256c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0c53 0 96-43 96-96l0-256c0-53-43-96-96-96l-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32zm-9.4 182.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L242.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l210.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"
                                 />
                             </svg>
                             Login
                         </a>
                     </div>
-
                     <!-- form search -->
                     <form class="d-flex" role="search">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn bg-success text-white" type="submit">
-                            <img src="./img/search.svg" alt="search" width="16px" height="16px" />
+                        <input
+                            class="form-control form-control-sm me-0"
+                            type="search"
+                            placeholder="Search for.."
+                            aria-label="Search"
+                        />
+                        <button class="btn btn-success btn-sm" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 512 512">
+                                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    fill="#ffffff"
+                                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                                />
+                            </svg>
                         </button>
                     </form>
                 </div>
             </div>
         </nav>
+
+        <!-- header start -->
+        <header class="main-header py-5 mt-5 border-bottom">
+            <div class="container">
+                <div class="row align-items-center gx-md-5">
+                    <!-- khoi trai -->
+                    <div class="col-md-6 ">
+                        <h1 class="fs-3 fw-normal">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime alias nulla minus sunt
+                            similique
+                        </h1>
+                        <p class="fs-5 fw-light text-secondary">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur, debitis mollitia
+                            laudantium tenetur, tempora obcaecati provident voluptatum
+                        </p>
+                        <a
+                            href="#!"
+                            class="btn btn-success btn-sm d-inline-flex justify-content-center align-items-center"
+                        >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16px"
+                                height="16px"
+                                class="me-2"
+                                viewBox="0 0 640 512"
+                            >
+                                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                <path
+                                    fill="#ffffff"
+                                    d="M96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3zM504 312l0-64-64 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l64 0 0-64c0-13.3 10.7-24 24-24s24 10.7 24 24l0 64 64 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-64 0 0 64c0 13.3-10.7 24-24 24s-24-10.7-24-24z"
+                                />
+                            </svg>
+                            Sign-up to get started
+                        </a>
+                    </div>
+                    <!-- khoi phai -->
+                    <div class="col-md-6 mt-5 mt-md-0">
+                        <div>
+                            <img class="rounded w-100" src="./img/main-header.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- header end -->
 
         <!-- Nhúng js bootstrap -->
         <script
